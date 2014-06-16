@@ -38,7 +38,6 @@ var ACCESS_TOKEN;
         IfLoggedInDiv.style.display="none";
         var IfNotLoggedInDiv=document.getElementById("if-not-logged-in");
         IfNotLoggedInDiv.style.display="inline-block";
-		$(".after_login").css("display","inline-block");
         FB.logout(function(response){
             location.reload();  // refresh
         });
