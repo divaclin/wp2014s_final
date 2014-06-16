@@ -1,0 +1,113 @@
+body{
+	width:560px;
+	height:775px;
+	font-family: '微軟正黑體','文泉驛微米黑', 'LiHei Pro', sans-serif;
+	background-color: #FFF;
+	border:#000 3px solid;
+	border-radius: 8%;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+form{
+	margin:25px 0 0 70px;
+}
+
+textarea{
+	resize: none;
+}
+
+#Title input{
+	margin-left: 100px;
+	border-bottom: #837E7C 2px solid;
+	border-top: #FFF 0px dashed;
+	border-left: #FFF 0px dashed;
+	border-right: #FFF 0px dashed;
+}
+
+#Unit input{
+	margin-top: 5px;
+	margin-left: 100px;
+	border-bottom: #837E7C 2px solid;
+	border-top: #FFF 0px dashed;
+	border-left: #FFF 0px dashed;
+	border-right: #FFF 0px dashed;
+}
+
+#Category select{
+	margin-top: 5px;
+	margin-left: 140px;
+	width:100px;
+}
+
+#Intro textarea{
+	height:60px;
+	width:200px;
+	margin-left: 67px;
+	margin-top: 10px;
+}
+
+#People, #Picture{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+#People input{
+	margin-top: 5px;
+	margin-left: 100px;
+	border-bottom: #837E7C 2px solid;
+	border-top: #FFF 0px dashed;
+	border-left: #FFF 0px dashed;
+	border-right: #FFF 0px dashed;
+}
+
+#Timeline{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.T{
+	margin-top: -25px;
+}
+.t, .p{
+	margin-left: 170px;
+	margin-top: -7px;
+}
+#Timeline input{
+	border-bottom: #837E7C 2px solid;
+	border-top: #FFF 0px dashed;
+	border-left: #FFF 0px dashed;
+	border-right: #FFF 0px dashed;
+	/*width:180px;*/
+}
+
+#PeriodicTask{
+	margin-top: 25px;
+}
+#PeriodicTask input{
+	border-bottom: #837E7C 2px solid;
+	border-top: #FFF 0px dashed;
+	border-left: #FFF 0px dashed;
+	border-right: #FFF 0px dashed;
+	/*width:180px;*/
+}
+.P{
+	margin-top: -25px;
+}
+
+#Content{
+	margin-top: 7px;
+}
+#Content textarea{
+	height:120px;
+	width:320px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#Button{ /* 建立按鈕的div */
+	margin:10px 0 0 170px;
+}
+#Button button{
+	font-size: 20px;
+	width:100px;
+	height:30px;
+}
