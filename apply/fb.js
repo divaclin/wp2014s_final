@@ -60,7 +60,7 @@ window.fbAsyncInit = function () {//facebook init
                 IfLoggedInDiv.style.display="inline-block";
                 var IfNotLoggedInDiv=document.getElementById("if-not-logged-in");
                 IfNotLoggedInDiv.style.display="none";
-                
+                $(".after_login").css("display","inline-block");
                 FB.api('/me', function(response) {
                 //    console.log('Good to see you, ' + response.name + '.');
                     var UserName = document.getElementById("user_name");
