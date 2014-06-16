@@ -15,6 +15,7 @@ var ACCESS_TOKEN;
         IfLoggedInDiv.style.display="inline-block";
         var IfNotLoggedInDiv=document.getElementById("if-not-logged-in");
         IfNotLoggedInDiv.style.display="none";
+		$(".after_login").css("display","inline-block");
       //testAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
@@ -25,6 +26,7 @@ var ACCESS_TOKEN;
         var IfNotLoggedInDiv=document.getElementById("if-not-logged-in");
         IfNotLoggedInDiv.style.display="inline-block";
         FB.logout(function(response){
+			$(".after_login").css("display","inline-block");
             location.reload();  // refresh
         });
     } else {
@@ -37,6 +39,7 @@ var ACCESS_TOKEN;
         var IfNotLoggedInDiv=document.getElementById("if-not-logged-in");
         IfNotLoggedInDiv.style.display="inline-block";
         FB.logout(function(response){
+			$(".after_login").css("display","none");
             location.reload();  // refresh
         });
     }
