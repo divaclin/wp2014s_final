@@ -120,6 +120,7 @@ window.fbAsyncInit = function () {//facebook init
 
     $("#logout-btn").click(function(){
         //alert('You are logging out. Bye!');
+		$(".after_login").css("display","none");
         FB.logout(function(response){
             location.reload();  // refresh
         });
