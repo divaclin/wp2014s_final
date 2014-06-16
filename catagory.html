@@ -17,19 +17,21 @@
 	<script type="text/javascript" src="css/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<link href="style.css" rel="stylesheet">
 	<script src="catagory.js"></script>
+	<script type="text/javascript" src="apply/fb.js"></script>
   </head>
 
   <body>
     <div id="wraper">
 	<header>
 		<ul>
-		<li><img src="img/logo.png" width="278px" /></li>
+		<li><a href="index.html"><img src="img/logo.png" width="278px" /></a></li>
 		<img src="img/listyle.png"/>
 		<li><a href="#">關於我們</a></li>
 		<img src="img/listyle.png"/>
 		<li><a href="#">查看連署</a></li>
 		<img src="img/listyle.png"/>
-		<li><a href="#">登入/註冊</a></li>
+		<li id="if-not-logged-in"><a href="#" id="login-btn">登入/註冊</a></li>
+		<li id="if-logged-in" style="display:none"><a href="#" id="logout-btn">登出</a></li>
 		<img src="img/listyle.png"/>
 		<li><a href="#">搜尋連署</a></li>
 		<li>
