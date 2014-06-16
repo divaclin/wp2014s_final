@@ -12,6 +12,31 @@ window.fbAsyncInit = function () {//facebook init
         oauth   : true,
         version: 'v2.0'
     });
+	FB.getLoginStatus(function(response) {
+	  if (response.status === 'connected') {
+	       uid = response.authResponse.userID;
+	       accessToken = response.authResponse.accessToken;
+	    //呼叫api把圖片放到#preview IMG tag 內
+    
+	  } else if (response.status === 'not_authorized') {
+	      FB.login(function (response) {
+	          // FB.api('/me/feed', 'post', {message: 'I\'m started using FB API'});
+	          if (response.authResponse) { // if user login to your apps right after handle an event
+	              window.location.reload();
+	          };
+	      }, {
+	          scope: 'user_about_me,email,user_location,user_photos,publish_actions,user_birthday,user_likes'
+	      });
+		//要求使用者登入，索取publish_actions權限
+	
+	  } else {
+	      FB.login(function (response) {
+	          if (response.authResponse) {
+	              window.location.reload();
+	          }
+		  });
+	  }
+	 });
 
 
     // define the events when login status changed.
