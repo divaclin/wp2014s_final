@@ -20,5 +20,6 @@ function CatagoryChange(e){
 			  console.log(content[i]);
 			  var title=content[i].toJSON.title;
 		  }
+	  }
 	});
 }
