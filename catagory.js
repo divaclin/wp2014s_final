@@ -18,7 +18,7 @@ function CatagoryChange(e){
 	  success: function(content) {
 		  
 		  console.log(content[0].toJSON().title);
-			 
+		  console.log(content[1].toJSON().title); 
 	  }
 	});
 }
