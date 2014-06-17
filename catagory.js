@@ -11,6 +11,7 @@ $().ready(function(){
 function CatagoryChange(e){
 	$("#catagory_content").empty();
 	$("#catagory_photo").attr("src", catagorylist[e]);
+	var Petition = Parse.Object.extend('Petition');
 	var query = new Parse.Query(Petition);
 	query.equalTo(category,catagory[e]);
 	query.find({
