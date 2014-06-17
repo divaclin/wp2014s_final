@@ -15,10 +15,23 @@ function CatagoryChange(e){
 	var query = new Parse.Query(Petition);
 	query.equalTo('category',catagory[e]);
 	query.find({
-	  success: function(content) {
-		  for(var i=0;i<content.length;i++){
-			  console.log(content[i]);
-			  var title=content[i].toJSON.title;
+	  success: function(data) {
+		  for(var i=0;i<data.length;i++){
+			  console.log(data[i]);
+			  var translation=data[i].toJSON;
+              $("#catagory_content").html('<div class="issue-block">
+				  <div class="issue-content">
+					  <p>'+translation.title+'</p>
+					  <img src="'+translation.picture.url+'" class="issue-img" />
+					  <div>'+translation.creatAt+'</div>
+					  <span>
+						  <a href="#">我要連署</a>
+						  <a href="#">連署聲明</a>	  
+					  </span>
+				  </div>
+			  </div>');
+			  
+			  
 		  }
 	  }
 	});
