@@ -17,9 +17,9 @@ $(document).ready(function(){
 	
 	$('.fancybox').fancybox({
 		'type': 'iframe', 
-		'scrolling': 'no',  
-		'iframe': {'scrolling': 'no'},
-		'width'  : 600,           
-    	'height' : 600  
+		'scrolling': 'no'  
+		//'iframe': {'scrolling': 'no'},
+		//'width'  : 600,           
+    	//'height' : 600  
 	});		
 });
