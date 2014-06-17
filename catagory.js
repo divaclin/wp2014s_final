@@ -16,6 +16,7 @@ function CatagoryChange(e){
 	query.equalTo('category',catagory[e]);
 	query.find({
 	  success: function(content) {
+		  alert(herher);
 		  console.log(content);
 			 
 	  }
