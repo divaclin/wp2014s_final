@@ -16,8 +16,10 @@ $().ready(function(){
 	$("#index03_layer_1").append('<a href="catagory.html"><img src="img/want_text.png" style="width:193px; margin-top:40px; margin-right:'+index03_height_pos_fixed*2/5+'px;"/></a><a class="fancybox fancybox.iframe" href="create.html"><img src="img/establish_text.png" style="width:193px; margin-top:40px; margin-left:'+index03_height_pos_fixed*2/5+'px;"/></a>');
 	
 	$('.fancybox').fancybox({
-		/*'type': 'iframe', 
+		'type': 'iframe', 
 		'scrolling': 'no',  
-		'iframe': {'scrolling': 'no'}*/
+		'iframe': {'scrolling': 'no'}
+		'width':'560px',
+		'height':'775px'
 	});		
 });
