@@ -16,8 +16,8 @@ function CatagoryChange(e){
 	query.equalTo('category',catagory[e]);
 	query.find({
 	  success: function(content) {
-		  alert("herher");
-		  console.log(content.length);
+		  for(var i=0;i<content.length;i++)
+		  console.log(content[i]);
 			 
 	  }
 	});
