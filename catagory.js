@@ -17,7 +17,7 @@ function CatagoryChange(e){
 	query.find({
 	  success: function(content) {
 		  
-		  console.log(content.toJSON().title);
+		  console.log(content[0].toJSON().title);
 			 
 	  }
 	});
