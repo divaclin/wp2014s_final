@@ -19,7 +19,7 @@ $().ready(function(){
 		'type': 'iframe', 
 		'scrolling': 'no',  
 		'iframe': {'scrolling': 'no'}
-		"width":"560px",
-		"height":"775px"
+		"width:560px,
+		"height:775px"
 	});		
 });
