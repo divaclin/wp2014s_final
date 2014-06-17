@@ -17,7 +17,7 @@ function CatagoryChange(e){
 	query.find({
 	  success: function(content) {
 		  alert("herher");
-		  console.log(content);
+		  console.log(content.length);
 			 
 	  }
 	});
