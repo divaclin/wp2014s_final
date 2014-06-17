@@ -13,7 +13,7 @@ function CatagoryChange(e){
 	$("#catagory_photo").attr("src", catagorylist[e]);
 	var Petition = Parse.Object.extend('Petition');
 	var query = new Parse.Query(Petition);
-	query.equalTo(category,catagory[e]);
+	query.equalTo('category',catagory[e]);
 	query.find({
 	  success: function(content) {
 		  console.log(content);
