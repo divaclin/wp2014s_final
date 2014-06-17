@@ -110,6 +110,7 @@ footer div{
 	padding:5px;
 	border:10px 0 0 0;
 	margin:8px 0 0 0;
+	float:left;
 }
 .issue-content{
 	width:250px;
