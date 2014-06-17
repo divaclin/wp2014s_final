@@ -1,4 +1,4 @@
-$().ready(function(){
+$(document).ready(function(){
 	var height=window.screen.height-56;
 	var logo_img_fixed=(window.screen.width-628)/2-50;
 	var html='<section style="width:100%; height:'+height+'px; z-index:3; background:#fff;margin:77px 0 0 0;"><img style="position:relative; z-index:2; left:'+logo_img_fixed+'px;top:100px;" src="img/index_logo.png"/><img style="position:absolute; right:0px;" src="img/index_logo_hand.png"/></section>';
