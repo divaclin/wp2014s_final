@@ -3,7 +3,7 @@ html{
 	overflow-y:scroll;
 }
 body{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "微軟正黑體", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.428571429;
 	background:#58F9C7;
@@ -155,3 +155,4 @@ footer div{
 	width:50px;
 	margin:0 10px 10px 10px;
 }
+/*merage line*/
