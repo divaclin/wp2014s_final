@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var logo_img_fixed=(window.screen.width-628)/2-50;
 	var html='<section style="width:100%; height:'+height+'px; z-index:3; background:#fff;margin:77px 0 0 0;"><img style="position:relative; z-index:2; left:'+logo_img_fixed+'px;top:100px;" src="img/index_logo.png"/><img style="position:absolute; right:0px;" src="img/index_logo_hand.png"/></section>';
 	$("article").append(html);
-	var ul_fixed=(window.screen.width-354)/2;
+	var ul_fixed=(window.screen.width-354)/2-100;
 	var search_fixed=(window.screen.width-220)/2+ul_fixed-180;
 	$("article section").append('<ul id="index_ul" style="left:'+ul_fixed+'px;"><img src="img/listyle.png"><li><a>關於我們</a></li><img src="img/listyle.png"><li><a href="catagory.html">查看連署</a></li><img src="img/listyle.png"><li><a>搜尋連署</a></li></ul>');	
 	var index02_height_pos_fixed=(window.screen.height-(window.screen.width-400)*947/1857)/2-100;
