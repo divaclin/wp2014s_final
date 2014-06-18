@@ -25,7 +25,7 @@ function CatagoryChange(e){
 			  var url=data[i].toJSON().picture.url;
 			  console.log(data[i].toJSON().id);
 			  if(first==0){
-				$("catagory_content").append('');  
+				$("catagory_content").append('<div style="width:'+window.screen.width+'px;"></div>');  
 				  first=1;
 			  }
 			  else{

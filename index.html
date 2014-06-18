@@ -14,7 +14,7 @@
     <script src="css/bootstrap-3.0.0/assets/js/jquery.js"></script>
     <script src="css/bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="css/scrollIt/scrollIt.js"></script>
-    <script src="css/colorbox/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="css/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<script src="index.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<script type="text/javascript" src="apply/fb.js"></script>
@@ -60,6 +60,63 @@
 	</footer>
 	
     </div>
+	<div id="inline">
+		  	<form name="Form" onsubmit="return validateForm()">
+	        <div id="Title"> <!--連署標題-->
+	          <span class="glyphicon glyphicon-ok"></span>&nbsp;連署標題
+	          <input type="text" name="petition-title" id="petition-title" maxlength="10">
+	        </div>
 
+	        <div id="Unit"> <!--發起單位-->
+	          &nbsp;發起單位
+	          <input type="text" name="petition-unit" id="petition-unit">
+	        </div>
+
+	        <div id="Category"> <!--類別選單-->
+	          <span class="glyphicon glyphicon-ok"></span>&nbsp;類別
+	          <select name="category" id="category">
+	            <option value="default">請選擇</option>
+	            <option value="politics-and-economics">政治經濟</option>
+	            <option value="education-and-culture">教育文化</option>
+	            <option value="environment-and-land">環保土地</option>
+	            <option value="livelihood">民生</option>
+	            <option value="labor">勞工</option>
+	          </select>
+	        </div>
+
+	        <div id="People"> <!--連署目標人數 target-->
+	          <span class="glyphicon glyphicon-ok"></span>&nbsp;目標人數
+	          <input type="text" name="petition-people" id="petition-people">
+	        </div>
+
+	        <div id="Intro"> <!--連署事件簡介-->
+	          <span class="glyphicon glyphicon-ok"></span>&nbsp;連署事件簡介
+	          <textarea name="petition-intro" id="petition-intro" rows="10" cols="50"></textarea>
+	        </div>
+
+	        <div id="Content"> <!--聲明內容-->
+	          <span class="glyphicon glyphicon-ok"></span>&nbsp;聲明內容
+	          <textarea name="petition-text" id="petition-text" rows="10" cols="50"></textarea>
+	        </div>
+
+	        <div id="Picture"> <!--連署圖片上傳-->
+	          <span class="glyphicon glyphicon-ok"></span>&nbsp;連署圖片
+	        </div>
+
+	        <div id="Timeline"> <!--連署事件時間軸-->
+	          &nbsp;&nbsp;&nbsp;連署重大事件
+	          <div class="T">
+	            <div class="t">1. <input type="text" name="timeline-1" id="timeline-1"></div>
+	            <div class="t">2. <input type="text" name="timeline-2" id="timeline-2"></div>
+	            <div class="t">3. <input type="text" name="timeline-3" id="timeline-3"></div>
+	            <div class="t">4. <input type="text" name="timeline-4" id="timeline-4"></div>
+	          </div>
+	        </div>
+
+	        <div id="Button" class="btn-group"> <!--建立的按鈕-->
+	          <button class="btn" id="create_btn" onClick="click_on_submit()">建 立</button>
+	        </div>
+	      </form>
+		  </div>
   </body>
 </html>
