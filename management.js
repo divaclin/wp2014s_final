@@ -5,7 +5,7 @@ $().ready(function(){
 	var query = new Parse.Query(Petition);
 	
 	console.log(user);
-	query.equalTo('user_id','WIipZ7f0w4');
+	query.equalTo('users_id','WIipZ7f0w4');
 	query.find({
 	  success: function(data) {
 		  for(var i=0;i<data.length;i++){
