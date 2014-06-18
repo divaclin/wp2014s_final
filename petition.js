@@ -61,7 +61,7 @@ function petition(object_id){
     		var Progress_Str = '<div id="Progress"><h2 id="progress-title">連署進度</h2><h5 id="current-number">'+count+'</h5><h5>&nbsp;&nbsp;/&nbsp;&nbsp;</h5><h5 id="target-number">'+people+'</h5><h5>&nbsp;&nbsp;份</h5><div class="progress"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:'+(count/people)*100+'%"></div></div></div>';
     		var Button_Str = '<div id="Buttons"><div id="Join-petition"><a href="#inline" data-bb="alert_callback" class="join-petition">我要連署</a></div><div id="Petition-list"><a href="#">連署名單</a></div></div>';
     		var FB_Share_Str = '<div id="FB-Share"><div id="Share-petition"><div class="fb-share-button" data-href="http://divaclin.github.io/wp2014s_final/" data-type="button_count"></div></div></div>';
-    		var Comments_Str = '<div id="Comments"><form action="" method="POST"><h3 id="comment-title">我有話要說</h3><h4><textarea name="comments" rows="10" cols="50"></textarea></h4><h4><input class="btn btn-success" name="submit" type="submit" value="提 交" /></h4></form></div><div id="pen"><img src="img/hand.png" /></div><div id="bottom-line"></div>';
+    		var Comments_Str = '<div id="Comments"><form action="" method="POST"><h3 id="comment-title">我有話要說</h3><h4><textarea name="comments" rows="10" cols="50"></textarea></h4><h4><input class="btn btn-success close-btn" name="submit" type="submit" value="提 交" /></h4></form></div><div id="pen"><img src="img/hand.png" /></div><div id="bottom-line"></div>';
 
     		var article_str = Ptitle_Str + Content_Str + Timeline_Str + Progress_Str + Button_Str + FB_Share_Str + Comments_Str;
 		
