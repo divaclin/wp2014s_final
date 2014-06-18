@@ -30,9 +30,6 @@ function CatagoryChange(e){
 	});
 }
 
-$(function() {
-  $( "#inline" ).dialog();
-});
 $('.defaultDOMWindow').openDOMWindow({ 
 eventType:'click', 
 loader:1, 
