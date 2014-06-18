@@ -24,10 +24,13 @@ article{
 	font-size:20px;
 	letter-spacing: 1.5px;
 }
+#aboutImg{
+	width: 120px;
+}
 #imgLi {
 	color:#FFF;
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 }
 #imgBlock{
 	margin: 10px;
