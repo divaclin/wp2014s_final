@@ -146,6 +146,11 @@ footer div{
 	color:#ffffff;
 	margin:0 25px 0 25px;
 }
+.issue-content div{
+	color:#ffffff;
+	text-align:center;
+	margin:0 auto;
+}
 .fixed-icon{
 	width:50px;
 	margin:0 10px 10px 10px;
