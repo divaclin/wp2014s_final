@@ -15,6 +15,7 @@ function CatagoryChange(e){
     $("article").append('<section style="background:#fff; margin-top:77px; text-align:center; height:'+window.screen.height*2/3+'px;"><img id="catagory_photo" src="'+catagorylist[0]+'" style="width:'+catagory_photo_width+'px;"/></section>');
 	$("article").append('<section id="catagory_content" style="background:#232A34; height:'+2*window.screen.height+'px; margin-top:20px"></section>');
 	$("#catagory_photo").attr("src", catagorylist[e]);
+	var first=0;
 	var Petition = Parse.Object.extend('Petition');
 	var query = new Parse.Query(Petition);
 	query.equalTo('category',catagory[e]);
@@ -23,7 +24,13 @@ function CatagoryChange(e){
 		  for(var i=0;i<data.length;i++){
 			  var url=data[i].toJSON().picture.url;
 			  console.log(data[i].toJSON().id);
-              $("#catagory_content").append('<div class="issue-block" style="width:'+window.screen.width/5+'px;"><div class="issue-content"><p>'+data[i].toJSON().title+'</p><img src="'+url+'" class="issue-img" /><div style="padding-bottom:10px;">' +data[i].createdAt.getFullYear()+'/'+(parseInt(data[i].createdAt.getMonth())+1)+'/'+ data[i].createdAt.getDate() + '</div><span><a href="#">我要連署</a><a href="#">連署聲明</a></span></div></div>');  
+			  if(first==0){
+				$("catagory_content").append('');  
+				  first=1;
+			  }
+			  else{
+                $("#catagory_content").append('<div class="issue-block" style="width:'+window.screen.width/5+'px;"><div class="issue-content"><p>'+data[i].toJSON().title+'</p><img src="'+url+'" class="issue-img" /><div style="padding-bottom:10px;">' +data[i].createdAt.getFullYear()+'/'+(parseInt(data[i].createdAt.getMonth())+1)+'/'+ data[i].createdAt.getDate() + '</div><span><a href="#">我要連署</a><a href="#">連署聲明</a></span></div></div>');  
+			  }
 		  }
 	  }
 	});
