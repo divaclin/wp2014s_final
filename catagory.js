@@ -29,3 +29,6 @@ function CatagoryChange(e){
 	  }
 	});
 }
+$(function() {
+  $( "#inline" ).dialog();
+});
