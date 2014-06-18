@@ -42,3 +42,4 @@ $('.addNewEventBox').click(function(){
 								'content': $('#inline').html(),
 								});
 							});
+$("closebtn").click().css("display","none");	
