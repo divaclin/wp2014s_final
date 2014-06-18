@@ -76,6 +76,9 @@ ul>img{
 	position:relative;
 	bottom:-160px;
 }
+#index_ul li{
+	padding:0 20px 0 0;
+}
 #index_ul li a{
 	color:#232A34;
 }
