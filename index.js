@@ -12,7 +12,7 @@ $(document).ready(function(){
 	var index03_height_pos_fixed=window.screen.height/5;
 	html='<section id="index03_layer_1" style="width:100%; height:'+window.screen.height+'px; text-align:center; background:#232A34; margin-top:20px;"><img id="index_want_graph" src="img/want_graph.png" style="height:'+index03_height_pos_fixed+'px; margin-top:'+index03_height_pos_fixed*4/5+'px; margin-right:'+index03_height_pos_fixed*2/5+'px;"/><img id="index_establish_graph" src="img/establish_graph.png" style="height:'+index03_height_pos_fixed+'px; margin-top:'+index03_height_pos_fixed*4/5+'px; margin-left:'+index03_height_pos_fixed*2/5+'px;"/><br/></section>';
 	$("article").append(html); 
-	$("#index03_layer_1").append('<a href="catagory.html"><img src="img/want_text.png" style="width:193px; margin-top:40px; margin-right:'+index03_height_pos_fixed*2/5+'px;"/></a>< href="create.html" ><img src="img/establish_text.png" style="width:193px; margin-top:40px; margin-left:'+index03_height_pos_fixed*2/5+'px;"/></a>');
+	$("#index03_layer_1").append('<a href="catagory.html"><img src="img/want_text.png" style="width:193px; margin-top:40px; margin-right:'+index03_height_pos_fixed*2/5+'px;"/></a><a href="create.html" ><img src="img/establish_text.png" style="width:193px; margin-top:40px; margin-left:'+index03_height_pos_fixed*2/5+'px;"/></a>');
 	
 
 	
