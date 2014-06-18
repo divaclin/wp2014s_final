@@ -61,7 +61,7 @@ function search(){
     				var pic_url = object.attributes.picture._url;
     				var issue_date = object.createdAt;
     				var petition_url = "http//:tiy0311.github.io/wp2014s_final_project/petition.html";
-    				var string = '<div class="issue-block style="width:'+window.screen.width/5+'px;"><div class="issue-content"><p>' + title + '</p><img src="' + pic_url +'" class="issue-img" /><span>' + issue_date + '</span><span><a href="#">我要連署</a><a href="' + petition_url + '">連署聲明</a></span></div></div>';
+    				var string = '<div class="issue-block style="width:'+window.screen.width/5+'px;"><div class="issue-content"><p>' + title + '</p><img src="' + pic_url +'" class="issue-img" /><span>' + issue_date + '</span><br/><span><a href="#">我要連署</a><a href="' + petition_url + '">連署聲明</a></span></div></div>';
 
     				$("article").append(string);
     				
