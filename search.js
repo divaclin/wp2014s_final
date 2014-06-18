@@ -53,6 +53,7 @@ function search(){
     				if(clear_article == 0){
     					$("article").empty();
     					clear_article = 1;
+						$("article").css({"height":window.screen.height+"px;","background":"#232A34","margin-top":"20px"});
     				}
 
 
