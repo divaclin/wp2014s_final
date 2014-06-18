@@ -19,7 +19,7 @@ function CatagoryChange(e){
 		  for(var i=0;i<data.length;i++){
 			  var url=data[i].toJSON().picture.url;
 			  console.log(data[i].toJSON().id);
-              $("#catagory_content").append('<div class="issue-block" style="width:'+window.screen.width/5+'px;"><div class="issue-content"><p>'+data[i].toJSON().title+'</p><img src="'+url+'" class="issue-img" /><div>' +data[i].createdAt.getFullYear()+'/'+(parseInt(data[i].createdAt.getMonth())+1)+'/'+ data[i].createdAt.getDate() + '</div><span><a href="#">我要連署</a><a href="#">連署聲明</a></span></div></div>');  
+              $("#catagory_content").append('<div class="issue-block" style="width:'+window.screen.width/5+'px;"><div class="issue-content"><p>'+data[i].toJSON().title+'</p><img src="'+url+'" class="issue-img" /><div style="padding-bottom:10px;">' +data[i].createdAt.getFullYear()+'/'+(parseInt(data[i].createdAt.getMonth())+1)+'/'+ data[i].createdAt.getDate() + '</div><span><a href="#">我要連署</a><a href="#">連署聲明</a></span></div></div>');  
 		  }
 	  }
 	});
